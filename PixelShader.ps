@@ -1,0 +1,15 @@
+struct PSInput
+{
+    float4 position : SV_POSITION;
+    float4 color : COLOR;
+};
+ 
+float4 PSEntry(PSInput vs_out) : SV_TARGET
+{
+    float4 Red;
+    Red.a = 1.0;
+    Red.r = 1.0;
+    Red.g = 0.0;
+    Red.b = 0.0;
+    return Red;
+}
